@@ -1,12 +1,14 @@
 import React from 'react'
+import ButtonStyle from './navbar/buttonStyle'
+import { Link, NavLink } from 'react-router-dom'
+import LogInBtn from './navbar/logInBtn'
 
 const NavBar = () => {
     const link=<>
-    
-        <li><a>Home</a></li>
-        <li><a>Product</a></li>
-        <li><a>About</a></li>
-      
+        <NavLink to="/home">
+        <ButtonStyle Text="Home"></ButtonStyle></NavLink>
+        <NavLink to="/productList"><ButtonStyle Text="Product List"></ButtonStyle></NavLink>
+        <NavLink to="/About"><ButtonStyle Text="About"></ButtonStyle></NavLink>
       </>
   return (
     <div>
@@ -30,10 +32,10 @@ const NavBar = () => {
       <ul
         tabIndex={0}
         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-        
+        {link}
       </ul>
     </div>
-    <a className="btn btn-ghost text-xl">daisyUI</a>
+    <a className="btn btn-ghost text-xl">One Shope</a>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
@@ -41,7 +43,7 @@ const NavBar = () => {
     </ul>
   </div>
   <div className="navbar-end">
-    <a className="btn">Button</a>
+    <Link to="/"><LogInBtn text="Log In"></LogInBtn></Link>
   </div>
 </div>
     </div>
