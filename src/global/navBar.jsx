@@ -5,7 +5,7 @@ import LogInBtn from './navbar/logInBtn'
 
 const NavBar = () => {
     const link=<>
-        <NavLink to="/home">
+        <NavLink to="/">
         <ButtonStyle Text="Home"></ButtonStyle></NavLink>
         <NavLink to="/productList"><ButtonStyle Text="Product List"></ButtonStyle></NavLink>
         <NavLink to="/About"><ButtonStyle Text="About"></ButtonStyle></NavLink>
@@ -43,7 +43,7 @@ const NavBar = () => {
     </ul>
   </div>
   <div className="navbar-end">
-    <Link to="/"><LogInBtn text="Log In"></LogInBtn></Link>
+    <Link to="/login"><LogInBtn text="Log In"></LogInBtn></Link>
   </div>
 </div>
     </div>
