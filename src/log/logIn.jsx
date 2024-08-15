@@ -3,6 +3,7 @@ import './login.css'
 
 import { useForm } from "react-hook-form"
 import RegisterBtn from './logIn/registerBtn'
+import { Link } from 'react-router-dom'
 
 const LogIn = () => {
     const {
@@ -36,7 +37,11 @@ const LogIn = () => {
       <div id="forgot-pass">
         <a href="#">Forgot password?</a>
       </div>
+    <div className='flex justify-center'>
+    <Link to="/register">
     <RegisterBtn></RegisterBtn>
+    </Link>
+    </div>
       <div id="bar"></div>
     </div>
   </form>
