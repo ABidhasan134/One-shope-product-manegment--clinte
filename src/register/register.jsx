@@ -1,18 +1,84 @@
 
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 
 import { Link } from "react-router-dom";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+// import { useNavigate } from "react-router-dom";
 
+import { updateProfile } from "firebase/auth";
+import { useNavigate } from "react-router-dom";
 import { FaRegEye } from "react-icons/fa6";
 import { FaRegEyeSlash } from "react-icons/fa6";
+import { AuthContext } from "../context/authProvider";
+
 
 
 const Register = () => {
 
   const [seePass, setSeePassword]=useState(false)
+  const {createUser,setLoading,setUser}=useContext(AuthContext);
+  const [error,setError]=useState();
+  const navigate=useNavigate();
 
+
+  const handelregisterSubmit = (e) => {
+
+    console.log(import.meta.env.VITE_appId);
+    e.preventDefault();
+    const userName = e.target.name.value;
+    const useremail = e.target.email.value;
+    const userpassword = e.target.password.value;
+    const userphotoUrl = e.target.url.value;
+    console.log(userName, userpassword, userphotoUrl, useremail);
+    if(userpassword.length<6){
+      toast("your password must be at least 6 characters")
+      return;
+    }
+    if(!/[A-Z]/.test(userpassword)){
+      toast("your password must have on upperCase letter")
+      return;
+    }
+    if(!/[a-z]/.test(userpassword)){
+      toast("your password must have on lowrCase letter")
+      return;
+    }
+    createUser(useremail, userpassword)
+      .then((userCredential) => {
+        // Signed up
+        const user = userCredential.user;
+        // console.log(user)
+        
+        
+        updateProfile(user, {
+          displayName: userName,
+          photoURL: userphotoUrl,
+        })
+        .then(() => {
+          toast("user created successfully");
+          setUser({displayName : userName, photoURL : userphotoUrl}) 
+          navigate("/")
+        })
+        .catch((error) => {
+          // An error occurred
+          // console.log(error)
+          // ...
+        });
+        // logOut();
+        setLoading(true);
+        e.target.reset();
+        // navigate("/successregester")
+        console.log('successregester')
+        // ...
+      })
+      .catch((error) => {
+        const errorMessage = error.message;
+        
+        // console.log(errorMessage)
+        toast(`Your already Have account please log in`);
+      });
+      
+  };
   return (
     <div className="container mx-auto">
       
@@ -20,8 +86,10 @@ const Register = () => {
         <div className="hero-content flex-col lg:w-2/3 w-full ">
             <h1 className="lg:text-5xl text-3xl font-bold ">Register</h1>
   
-            <div className="card shrink-0 w-full max-w-full shadow-2xl  bg-gray-100">
-              <form className="card-body" >
+            <div 
+             className="card shrink-0 w-full max-w-full shadow-2xl  bg-gray-100">
+              <form onSubmit={handelregisterSubmit}
+               className="card-body" >
                 {/* name input */}
                 <div className="form-control">
                   <label className="label">
