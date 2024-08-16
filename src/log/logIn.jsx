@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react";
 import "./login.css";
 import { useForm } from "react-hook-form";
 import RegisterBtn from "./logIn/registerBtn";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../context/authProvider";
 import { ToastContainer, toast } from 'react-toastify';
 
@@ -10,6 +10,8 @@ const LogIn = () => {
   const { logInuser } = useContext(AuthContext);
   const navigate = useNavigate();
   const [seePass, setSeePassword] = useState(false);
+  const logLocation=useLocation();
+  console.log(logLocation);
   
   const {
     register,
@@ -18,11 +20,11 @@ const LogIn = () => {
   } = useForm();
 
   const onSubmit = (data) => {
-    logInuser(data.email, data.password) // Use lowercase 'password' here
+    logInuser(data.email, data.password) 
       .then((userCredential) => {
         toast("Login successful");
         setTimeout(() => {
-          navigate("/"); // Adjust this as per your redirection needs
+          navigate(logLocation?.state?logLocation.state:"/");
         }, 3000);
       })
       .catch((error) => {
