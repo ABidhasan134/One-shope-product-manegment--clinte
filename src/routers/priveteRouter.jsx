@@ -2,7 +2,7 @@ import React, { Children, useContext } from 'react'
 import { AuthContext } from '../context/authProvider'
 import { Navigate, useLocation } from 'react-router-dom';
 
-const PriveteRouter = () => {
+const PriveteRouter = ({children}) => {
     const {user,loading}=useContext(AuthContext);
     const location =useLocation();
 
@@ -13,7 +13,7 @@ const PriveteRouter = () => {
 
     if(user)
     {
-        return Children
+        return children
     }
   return (
     <div>

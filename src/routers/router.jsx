@@ -4,6 +4,8 @@ import App from "../App";
 import LogIn from "../log/logIn";
 import Home from "../Home/home";
 import Register from "../register/register";
+import ProductList from "../productList/productList";
+import PriveteRouter from "./priveteRouter";
 const router = createBrowserRouter([
     {
       path: "/",
@@ -20,6 +22,11 @@ const router = createBrowserRouter([
         {
           path: "/register",
           element: <Register></Register>
+        },
+        {
+          path: '/productList',
+          element: <PriveteRouter><ProductList></ProductList></PriveteRouter>,
+          
         }
       ]
     },

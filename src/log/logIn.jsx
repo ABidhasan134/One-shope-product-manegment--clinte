@@ -11,7 +11,7 @@ const LogIn = () => {
   const navigate = useNavigate();
   const [seePass, setSeePassword] = useState(false);
   const logLocation=useLocation();
-  console.log(logLocation);
+  console.log(logLocation.state);
   
   const {
     register,
@@ -24,7 +24,7 @@ const LogIn = () => {
       .then((userCredential) => {
         toast("Login successful");
         setTimeout(() => {
-          navigate(logLocation?.state?logLocation.state:"/");
+          navigate(logLocation?.state?logLocation?.state:"/");
         }, 3000);
       })
       .catch((error) => {

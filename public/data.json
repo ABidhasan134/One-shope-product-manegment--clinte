@@ -1,0 +1,432 @@
+[
+    {
+        "Brand_Name": "TechLife",
+        "Category_Name": "Electronics",
+        "Price_Range": "500-1000",
+        "Price": 750,
+        "Date_Added": "2024-08-10",
+        "name": "Smartphone X200",
+        "short_discription": "A high-end smartphone with a sleek design and powerful performance.",
+        "available_number": 120
+      },
+      {
+        "Brand_Name": "HomeComfort",
+        "Category_Name": "Appliances",
+        "Price_Range": "100-300",
+        "Price": 150,
+        "Date_Added": "2024-08-12",
+        "name": "Air Purifier Pro",
+        "short_discription": "An advanced air purifier with multiple filters for clean air.",
+        "available_number": 200
+      },
+      {
+        "Brand-Name": "EcoWear",
+        "Category-Name": "Fashion",
+        "Price-Range": "50-100",
+        "Price": 80,
+        "Date-Added": "2024-07-15",
+        "name": "Eco-friendly T-Shirt",
+        "short_discription": "A comfortable t-shirt made from sustainable materials.",
+        "available_number": 350
+      },
+      {
+        "Brand_Name": "GamerWorld",
+        "Category_Name": "Gaming",
+        "Price_Range": "200-500",
+        "Price": 400,
+        "Date_Added": "2024-06-18",
+        "name": "Gaming Keyboard X",
+        "short_discription": "A mechanical keyboard with customizable RGB lighting.",
+        "available_number": 75
+      },
+      {
+        "Brand_Name": "FitPlus",
+        "Category_Name": "Health & Fitness",
+        "Price_Range": "50-150",
+        "Price": 120,
+        "Date_Added": "2024-08-01",
+        "name": "Smart Fitness Band",
+        "short_discription": "A fitness band with heart rate monitoring and activity tracking.",
+        "available_number": 220
+      },
+      {
+        "Brand_Name": "TechLife",
+        "Category_Name": "Electronics",
+        "Price_Range": "200-500",
+        "Price": 350,
+        "Date_Added": "2024-08-02",
+        "name": "Wireless Earbuds Pro",
+        "short_discription": "High-quality wireless earbuds with noise cancellation.",
+        "available_number": 180
+      },
+      {
+        "Brand_Name": "HomeComfort",
+        "Category_Name": "Furniture",
+        "Price_Range": "100-300",
+        "Price": 250,
+        "Date_Added": "2024-07-30",
+        "name": "Ergonomic Office Chair",
+        "short_discription": "A comfortable office chair with lumbar support and adjustable height.",
+        "available_number": 90
+      },
+      {
+        "Brand_Name": "EcoWear",
+        "Category_Name": "Fashion",
+        "Price_Range": "100-200",
+        "Price": 150,
+        "Date_Added": "2024-06-25",
+        "name": "Organic Cotton Jeans",
+        "short_discription": "Stylish jeans made from 100% organic cotton.",
+        "available_number": 200
+      },
+      {
+        "Brand_Name": "GamerWorld",
+        "Category_Name": "Gaming",
+        "Price_Range": "100-200",
+        "Price": 180,
+        "Date_Added": "2024-08-05",
+        "name": "Gaming Mouse Elite",
+        "short_discription": "A gaming mouse with high DPI and customizable buttons.",
+        "available_number": 150
+      },
+      {
+        "Brand_Name": "FitPlus",
+        "Category_Name": "Health & Fitness",
+        "Price_Range": "200-300",
+        "Price": 250,
+        "Date_Added": "2024-07-20",
+        "name": "Smart Scale",
+        "short_discription": "A smart scale that tracks body weight, BMI, and other metrics.",
+        "available_number": 100
+      },
+      {
+        "Brand_Name": "TechLife",
+        "Category_Name": "Electronics",
+        "Price_Range": "500-1000",
+        "Price": 850,
+        "Date_Added": "2024-08-14",
+        "name": "4K Smart TV",
+        "short_discription": "A 55-inch 4K smart TV with HDR and built-in streaming apps.",
+        "available_number": 60
+      },
+      {
+        "Brand_Name": "HomeComfort",
+        "Category_Name": "Appliances",
+        "Price_Range": "300-500",
+        "Price": 400,
+        "Date_Added": "2024-08-03",
+        "name": "Robotic Vacuum Cleaner",
+        "short_discription": "A smart vacuum cleaner that automatically cleans your floors.",
+        "available_number": 80
+      },
+      {
+        "Brand_Name": "EcoWear",
+        "Category_Name": "Fashion",
+        "Price_Range": "50-100",
+        "Price": 70,
+        "Date_Added": "2024-07-25",
+        "name": "Recycled Fabric Hoodie",
+        "short_discription": "A hoodie made from recycled materials, offering warmth and comfort.",
+        "available_number": 300
+      },
+      {
+        "Brand_Name": "GamerWorld",
+        "Category_Name": "Gaming",
+        "Price_Range": "50-100",
+        "Price": 90,
+        "Date_Added": "2024-08-07",
+        "name": "Gaming Headset Pro",
+        "short_discription": "A high-quality gaming headset with surround sound and a built-in microphone.",
+        "available_number": 110
+      },
+      {
+        "Brand_Name": "FitPlus",
+        "Category_Name": "Health & Fitness",
+        "Price_Range": "100-200",
+        "Price": 180,
+        "Date_Added": "2024-07-28",
+        "name": "Yoga Mat Deluxe",
+        "short_discription": "A thick, non-slip yoga mat for comfortable workouts.",
+        "available_number": 130
+      },
+      {
+        "Brand_Name": "TechLife",
+        "Category_Name": "Electronics",
+        "Price_Range": "100-200",
+        "Price": 150,
+        "Date_Added": "2024-08-16",
+        "name": "Portable Bluetooth Speaker",
+        "short_discription": "A compact and powerful Bluetooth speaker with deep bass.",
+        "available_number": 250
+      },
+      {
+        "Brand_Name": "HomeComfort",
+        "Category_Name": "Furniture",
+        "Price_Range": "500-1000",
+        "Price": 800,
+        "Date_Added": "2024-07-22",
+        "name": "Luxury Sofa",
+        "short_discription": "A plush sofa with a modern design, perfect for any living room.",
+        "available_number": 40
+      },
+      {
+        "Brand_Name": "EcoWear",
+        "Category_Name": "Fashion",
+        "Price_Range": "100-200",
+        "Price": 130,
+        "Date_Added": "2024-06-30",
+        "name": "Sustainable Leather Belt",
+        "short_discription": "A durable belt made from sustainably sourced leather.",
+        "available_number": 180
+      },
+      {
+        "Brand_Name": "GamerWorld",
+        "Category_Name": "Gaming",
+        "Price_Range": "300-500",
+        "Price": 450,
+        "Date_Added": "2024-07-05",
+        "name": "Gaming Monitor UltraWide",
+        "short_discription": "A 34-inch ultrawide gaming monitor with a 144Hz refresh rate.",
+        "available_number": 50
+      },
+      {
+        "Brand_Name": "FitPlus",
+        "Category_Name": "Health & Fitness",
+        "Price_Range": "50-100",
+        "Price": 75,
+        "Date_Added": "2024-08-08",
+        "name": "Resistance Bands Set",
+        "short_discription": "A set of resistance bands for full-body workouts.",
+        "available_number": 240
+      },
+      {
+        "Brand_Name": "TechLife",
+        "Category_Name": "Electronics",
+        "Price_Range": "1000-1500",
+        "Price": 1300,
+        "Date_Added": "2024-07-18",
+        "name": "Gaming Laptop",
+        "short_discription": "A high-performance gaming laptop with the latest graphics card.",
+        "available_number": 30
+      },
+      {
+        "Brand_Name": "HomeComfort",
+        "Category_Name": "Appliances",
+        "Price_Range": "200-500",
+        "Price": 300,
+        "Date_Added": "2024-08-10",
+        "name": "Smart Thermostat",
+        "short_discription": "A smart thermostat that learns your schedule to save energy.",
+        "available_number": 70
+      },
+      {
+        "Brand_Name": "EcoWear",
+        "Category_Name": "Fashion",
+        "Price_Range": "50-100",
+        "Price": 60,
+        "Date_Added": "2024-07-12",
+        "name": "Bamboo Sunglasses",
+        "short_discription": "Eco-friendly sunglasses with bamboo frames.",
+        "available_number": 190
+      },
+      {
+        "Brand Name": "FitPlus",
+        "Category Name": "Health & Fitness",
+        "Price Range": "200-300",
+        "Price": 280,
+        "Date Added": "2024-08-13",
+        "name": "Adjustable Dumbbell Set",
+        "short_discription": "A versatile dumbbell set with adjustable weights for strength training.",
+        "available_number": 85
+      },
+      {
+        "Brand Name": "TechLife",
+        "Category Name": "Electronics",
+        "Price Range": "300-500",
+        "Price": 450,
+        "Date Added": "2024-08-14",
+        "name": "Smartwatch Pro",
+        "short_discription": "A smartwatch with fitness tracking, GPS, and long battery life.",
+        "available_number": 170
+      },
+      {
+        "Brand Name": "HomeComfort",
+        "Category Name": "Furniture",
+        "Price Range": "200-500",
+        "Price": 380,
+        "Date Added": "2024-08-15",
+        "name": "Modern Coffee Table",
+        "short_discription": "A sleek coffee table with a glass top and wooden base.",
+        "available_number": 95
+      },
+      {
+        "Brand Name": "EcoWear",
+        "Category Name": "Fashion",
+        "Price Range": "50-100",
+        "Price": 55,
+        "Date Added": "2024-08-09",
+        "name": "Recycled Polyester Jacket",
+        "short_discription": "A lightweight jacket made from recycled polyester.",
+        "available_number": 210
+      },
+      {
+        "Brand Name": "GamerWorld",
+        "Category Name": "Gaming",
+        "Price Range": "500-1000",
+        "Price": 950,
+        "Date Added": "2024-08-10",
+        "name": "Gaming Console X Pro",
+        "short_discription": "A next-gen gaming console with 4K gaming support.",
+        "available_number": 60
+      },
+      {
+        "Brand Name": "FitPlus",
+        "Category Name": "Health & Fitness",
+        "Price Range": "300-500",
+        "Price": 420,
+        "Date Added": "2024-08-12",
+        "name": "Treadmill Pro",
+        "short_discription": "A high-performance treadmill with multiple workout programs.",
+        "available_number": 45
+      },
+      {
+        "Brand Name": "TechLife",
+        "Category Name": "Electronics",
+        "Price Range": "1500-2000",
+        "Price": 1800,
+        "Date Added": "2024-08-15",
+        "name": "4K Projector",
+        "short_discription": "A 4K projector with HDR and smart features for home cinema.",
+        "available_number": 35
+      },
+      {
+        "Brand Name": "HomeComfort",
+        "Category Name": "Appliances",
+        "Price Range": "100-300",
+        "Price": 200,
+        "Date Added": "2024-08-16",
+        "name": "Blender Pro",
+        "short_discription": "A high-speed blender with multiple settings for smoothies and more.",
+        "available_number": 120
+      },
+      {
+        "Brand Name": "EcoWear",
+        "Category Name": "Fashion",
+        "Price Range": "100-200",
+        "Price": 140,
+        "Date Added": "2024-08-11",
+        "name": "Organic Wool Sweater",
+        "short_discription": "A cozy sweater made from organic wool.",
+        "available_number": 160
+      },
+      {
+        "Brand Name": "GamerWorld",
+        "Category Name": "Gaming",
+        "Price Range": "200-500",
+        "Price": 220,
+        "Date Added": "2024-08-12",
+        "name": "VR Headset",
+        "short_discription": "An immersive VR headset with a wide field of view.",
+        "available_number": 80
+      },
+      {
+        "Brand Name": "FitPlus",
+        "Category Name": "Health & Fitness",
+        "Price Range": "50-100",
+        "Price": 65,
+        "Date Added": "2024-08-13",
+        "name": "Foam Roller Set",
+        "short_discription": "A set of foam rollers for muscle recovery and stretching.",
+        "available_number": 140
+      },
+      {
+        "Brand Name": "TechLife",
+        "Category Name": "Electronics",
+        "Price Range": "300-500",
+        "Price": 390,
+        "Date Added": "2024-08-14",
+        "name": "Smart Home Security Camera",
+        "short_discription": "A smart security camera with night vision and cloud storage.",
+        "available_number": 100
+      },
+      {
+        "Brand Name": "HomeComfort",
+        "Category Name": "Furniture",
+        "Price Range": "500-1000",
+        "Price": 600,
+        "Date Added": "2024-08-15",
+        "name": "King Size Bed Frame",
+        "short_discription": "A modern king size bed frame with a sturdy wooden design.",
+        "available_number": 50
+      },
+      {
+        "Brand Name": "EcoWear",
+        "Category Name": "Fashion",
+        "Price Range": "50-100",
+        "Price": 85,
+        "Date Added": "2024-08-09",
+        "name": "Hemp Backpack",
+        "short_discription": "A durable backpack made from hemp fabric.",
+        "available_number": 180
+      },
+      {
+        "Brand Name": "GamerWorld",
+        "Category Name": "Gaming",
+        "Price Range": "50-100",
+        "Price": 70,
+        "Date Added": "2024-08-10",
+        "name": "Gaming Controller",
+        "short_discription": "A wireless gaming controller with customizable buttons.",
+        "available_number": 90
+      },
+      {
+        "Brand Name": "FitPlus",
+        "Category Name": "Health & Fitness",
+        "Price Range": "100-200",
+        "Price": 150,
+        "Date Added": "2024-08-12",
+        "name": "Electric Bike Pump",
+        "short_discription": "A portable electric bike pump with multiple pressure settings.",
+        "available_number": 110
+      },
+      {
+        "Brand Name": "TechLife",
+        "Category Name": "Electronics",
+        "Price Range": "500-1000",
+        "Price": 750,
+        "Date Added": "2024-08-15",
+        "name": "Smart Refrigerator",
+        "short_discription": "A smart refrigerator with touch screen and internet connectivity.",
+        "available_number": 40
+      },
+      {
+        "Brand Name": "HomeComfort",
+        "Category Name": "Appliances",
+        "Price Range": "300-500",
+        "Price": 400,
+        "Date Added": "2024-08-16",
+        "name": "Washing Machine Pro",
+        "short_discription": "A front-loading washing machine with smart features.",
+        "available_number": 70
+      },
+      {
+        "Brand Name": "EcoWear",
+        "Category Name": "Fashion",
+        "Price Range": "100-200",
+        "Price": 150,
+        "Date Added": "2024-08-11",
+        "name": "Fair Trade Leather Boots",
+        "short_discription": "Sturdy and stylish boots made from fair trade leather.",
+        "available_number": 130
+      },
+      {
+        "Brand Name": "GamerWorld",
+        "Category Name": "Gaming",
+        "Price Range": "200-500",
+        "Price": 300,
+        "Date Added": "2024-08-12",
+        "name": "Gaming Chair Pro",
+        "short_discription": "An ergonomic gaming chair with lumbar support.",
+        "available_number": 75
+      }
+]
