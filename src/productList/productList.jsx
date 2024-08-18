@@ -107,7 +107,7 @@ const ProductList = () => {
   return (
     <div>
       {/* fillter apply */}
-      <div className="filters flex gap-4 mb-4">
+      <div className="filters grid md:flex  gap-1 lg:gap3 mb-4">
         <input
           type="text"
           placeholder="Brand Name"
@@ -165,7 +165,7 @@ const ProductList = () => {
         </details>
       </div>
       {/* card show case */}
-      <div className="grid grid-cols-3 gap-4">
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 justify-center gap-4">
         {displayProducts.map((product, index) => (
           <ProductCard key={index} product={product} />
         ))}

@@ -3,8 +3,11 @@ import "./login.css";
 import { useForm } from "react-hook-form";
 import RegisterBtn from "./logIn/registerBtn";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { AuthContext } from "../context/authProvider";
 import { ToastContainer, toast } from 'react-toastify';
+import { AuthContext } from "../context/AuthProvider";
+import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
+import { FaGoogle } from "react-icons/fa";
+import { auth } from "../firebase/firebase";
 
 const LogIn = () => {
   const { logInuser } = useContext(AuthContext);
@@ -12,6 +15,7 @@ const LogIn = () => {
   const [seePass, setSeePassword] = useState(false);
   const logLocation=useLocation();
   console.log(logLocation.state);
+  const provider = new GoogleAuthProvider();
   
   const {
     register,
@@ -32,6 +36,19 @@ const LogIn = () => {
       });
   };
 
+  const handelGoogleSubmit = () => {
+    signInWithPopup(auth, provider)
+      .then((result) => {
+        const user = result.user;
+        // setPerson(user);
+        toast("Login successful with Google");
+        // console.log(user);
+        setTimeout(() => {
+          navigate(logLocation?.state?logLocation.state:"/");
+        }, 3000);
+      })
+      .catch((error) => console.log("error", error.message));
+  };
   return (
     <div id="form-ui">
       <form action="" method="post" id="form" onSubmit={handleSubmit(onSubmit)}>
@@ -78,6 +95,10 @@ const LogIn = () => {
           <div id="forgot-pass">
             <a href="#">Forgot password?</a>
           </div>
+          <div className="w-full flex justify-center">
+          <button className="my-2 btn text-white bg-transparent bottom-2 border-green-800 w-[45%] sm:w-[48%] ml-2 mr-2 hover:bg-green-800 hover:text-white" onClick={handelGoogleSubmit}>
+          <span className="text-2xl"><FaGoogle></FaGoogle></span>Google log in</button>
+          </div>
           <div className="flex justify-center">
             <Link to="/register">
               <RegisterBtn />
@@ -85,7 +106,7 @@ const LogIn = () => {
           </div>
           <div id="bar"></div>
         </div>
-        <ToastContainer /> {/* Include ToastContainer */}
+        <ToastContainer /> 
       </form>
     </div>
   );
