@@ -12,7 +12,7 @@ const ProductCard = ({product,index}) => {
     <h2 className="card-title">{product.name}</h2>
     <p>{product.Brand_Name}</p>
     <p>{product.short_discription}</p>
-    <p>{product.Category_Name}</p>
+    <p>{product.Price}</p>
     <div className="card-actions justify-end">
       <button className="btn btn-primary">Buy Now</button>
     </div>
