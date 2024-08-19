@@ -4,6 +4,7 @@ import { AuthContext } from "../context/AuthProvider";
 import useProduct from "../hook/useProduct";
 import useAxiosSequer from "../hook/useSequer";
 import ProductCard from "./ProductCard";
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 const ProductList = () => {
   const [searchResults, setSearchResults] = useState([]);
@@ -105,7 +106,11 @@ const ProductList = () => {
   const displayProducts = searchResults.length > 0 ? searchResults : products;
 
   return (
+  
     <div>
+      <Helmet>
+        <title>One shope | Product List</title>
+      </Helmet>
       {/* fillter apply */}
       <div className="filters grid md:flex  gap-1 lg:gap3 mb-4">
         <input
@@ -194,6 +199,7 @@ const ProductList = () => {
         </div>
       )}
     </div>
+  
   );
 };
 

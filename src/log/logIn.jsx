@@ -8,6 +8,7 @@ import { AuthContext } from "../context/AuthProvider";
 import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import { FaGoogle } from "react-icons/fa";
 import { auth } from "../firebase/firebase";
+import { Helmet } from "react-helmet-async";
 
 const LogIn = () => {
   const { logInuser } = useContext(AuthContext);
@@ -51,6 +52,9 @@ const LogIn = () => {
   };
   return (
     <div id="form-ui">
+      <Helmet>
+        <title>Log In One shope</title>
+      </Helmet>
       <form action="" method="post" id="form" onSubmit={handleSubmit(onSubmit)}>
         <div id="form-body">
           <div id="welcome-lines">

@@ -10,7 +10,9 @@ import { updateProfile } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 import { FaRegEye } from "react-icons/fa6";
 import { FaRegEyeSlash } from "react-icons/fa6";
-import { AuthContext } from "../context/authProvider";
+import { AuthContext } from "../context/AuthProvider";
+import { Helmet } from "react-helmet-async";
+
 
 
 
@@ -81,7 +83,9 @@ const Register = () => {
   };
   return (
     <div className="container mx-auto">
-      
+      <Helmet>
+        <title>Register One shope Now</title>
+      </Helmet>
         <div className="hero ">
         <div className="hero-content flex-col lg:w-2/3 w-full ">
             <h1 className="lg:text-5xl text-3xl font-bold ">Register</h1>

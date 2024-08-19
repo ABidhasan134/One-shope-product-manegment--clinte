@@ -6,10 +6,12 @@ import Home from "../Home/home";
 import Register from "../register/register";
 import ProductList from "../productList/productList";
 import PriveteRouter from "./priveteRouter";
+import Error from "../error/error";
 const router = createBrowserRouter([
     {
       path: "/",
       element: <Main></Main>,
+      errorElement: <Error></Error>,
       children: [
         {
             path: '/',

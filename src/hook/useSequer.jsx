@@ -1,6 +1,6 @@
 import axios from "axios";
 const axiosSequer=axios.create({
-    baseURL: 'http://localhost:5000',
+    baseURL: 'https://one-shope-server.vercel.app/',
     withCredentials: true,
 })
 
